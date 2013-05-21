@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+      <loc>http://jatovm.org</loc>
+      <lastmod>2013-03-03</lastmod>
+  </url>
+  <url>
+      <loc>http://jatovm.org/docs.html</loc>
+      <lastmod>2013-03-03</lastmod>
+  </url>
+  <url>
+      <loc>http://jatovm.org/compat.html</loc>
+      <lastmod>2013-03-03</lastmod>
+  </url>
+  <url>
+      <loc>http://jatovm.org/projects.html</loc>
+      <lastmod>2013-03-03</lastmod>
+  </url>
+</urlset>

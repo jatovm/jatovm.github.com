@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jato</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" href="styles/styles.css" type="text/css" charset="utf-8" />
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-38985323-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="header">
+				<h1 id="logo"><a href="index.html">Jato - a JIT-only VM for Java</a></h1>
+				<ul id="nav">
+					<li><a href="docs.html">DOCUMENTATION</a></li>
+					<li><a class="active" href="compat.html">COMPATIBILITY</a></li>
+					<li><a href="projects.html">OPEN PROJECTS</a></li>
+					<li><a href="http://groups.google.com/group/jatovm">MAILING LIST</a></li>
+					<li><a href="https://github.com/jatovm/jato/issues">BUGS</a></li>
+				</ul>
+			</div>
+			<div id="content">
+
+<h1>Compatibility</h1> 
+ 
+<table id="compat-table">
+<tr>
+  <th id="app">Application</th><th id="version">Version</th><th id="status">Status</th><th id="notes">Notes</th>
+</tr>
+<tr>
+  <td id="app"><a href="http://www.eclipse.org/">Eclipse</a></td>
+  <td>&nbsp;</td>
+  <td id="status"><img alt="OK" src="images/status-ok.png" /></td>
+  <td>&nbsp;</td>
+</tr>
+<tr>
+  <td id="app"><a href="http://www.eclipse.org/jdt/overview.php#JDT_CORE">Eclipse Compiler for Java</a></td>
+  <td>&nbsp;</td>
+  <td id="status"><img alt="OK" src="images/status-ok.png" /></td>
+  <td>&nbsp;</td>
+</tr>
+<tr>
+  <td id="app"><a href="http://math.nist.gov/scimark2/">Java SciMark</a></td>
+  <td>2.0</td>
+  <td id="status"><img alt="OK" src="images/status-ok.png" /></td>
+  <td>&nbsp;</td>
+</tr>
+<tr>
+  <td id="app"><a href="http://www.liquid-reality.de:8080/display/liquid/Java+Tris">Java Tris</a></td>
+  <td>&nbsp;</td>
+  <td id="status"><img alt="OK" src="images/status-ok.png" /></td>
+  <td>&nbsp;</td>
+</tr>
+<tr>
+  <td id="app"><a href="http://dacapobench.org/">DaCapo</a></td>
+  <td>2006-10-MR2</td>
+  <td id="status"><img alt="OK" src="images/status-ok.png" /></td>
+  <td>&nbsp;</td>
+</tr>
+<tr>
+  <td id="app"><a href="http://hudson-ci.org/">Hudson</a></td>
+  <td>1.361</td>
+  <td id="status"><img alt="WARNING" src="images/status-warning.png" /></td>
+  <td>The web server starts up but xstream initialization fails which makes it unusable..</td>
+</tr>
+<tr>
+  <td id="app"><a href="http://javapc.sourceforge.net/home_home.html">JPC</a></td>
+  <td>&nbsp;</td>
+  <td id="status"><img alt="WARNING" src="images/status-warning.png" /></td>
+  <td>JPC starts up and is works but rendering bugs make it difficult to use.</td>
+</tr>
+<tr>
+  <td id="app"><a href="http://www.jruby.org/">JRuby</a></td>
+  <td>1.6.0 RC2</td>
+  <td id="status"><img alt="WARNING" src="images/status-warning.png" /></td>
+  <td>Hello world works but the Ruby test suite crashes.</td>
+</tr>
+<tr>
+  <td id="app"><a href="http://www.jython.org/">Jython</a></td>
+  <td>2.5.2 RC 4</td>
+  <td id="status"><img alt="WARNING" src="images/status-warning.png" /></td>
+  <td>Interactive shell starts up but doesn't display the prompt.</td>
+</tr>
+<tr>
+  <td id="app"><a href="http://ant.apache.org/">Apache Ant</a></td>
+  <td>1.7.1</td>
+  <td id="status"><img alt="BROKEN" src="images/status-broken.png" /></td>
+  <td>SIGSEGV when Apache Ivy plugin is used.</td>
+</tr>
+<tr>
+  <td id="app"><a href="http://www.frozen-bubble.org/">Frozen Bubble</a></td>
+  <td>1.0.2</td>
+  <td id="status"><img alt="BROKEN" src="images/status-broken.png" /></td>
+  <td>The application enters an infinite loop and runs out of memory.</td>
+</tr>
+<tr>
+  <td id="app"><a href="http://www.codealchemists.com/jdarkroom/">JDarkRoom</a></td>
+  <td>&nbsp;</td>
+  <td id="status"><img alt="BROKEN" src="images/status-broken.png" /></td>
+  <td>The application starts but is completely unusable.</td>
+</tr>
+<tr>
+  <td id="app"><a href="http://www.jedit.org/">JEdit</a></td>
+  <td>4.3pre17</td>
+  <td id="status"><img alt="BROKEN" src="images/status-broken.png" /></td>
+  <td>Application hangs at startup.</td>
+</tr>
+</table>
+
+			</div>
+			<div id="footer">
+				<p>Copyright &copy; 2010. Contact: <a href="mailto:penberg@cs.helsinki.fi">Pekka Enberg</a></p>
+				<p><a href="http://designpunct.ro" target="_blank">design by punct</a></p>
+			</div>
+		</div>
+	</body>
+</html>

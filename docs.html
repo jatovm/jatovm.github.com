@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jato</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" href="styles/styles.css" type="text/css" charset="utf-8" />
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-38985323-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="header">
+				<h1 id="logo"><a href="index.html">Jato - a JIT-only VM for Java</a></h1>
+				<ul id="nav">
+					<li><a class="active" href="docs.html">DOCUMENTATION</a></li>
+					<li><a href="compat.html">COMPATIBILITY</a></li>
+					<li><a href="projects.html">OPEN PROJECTS</a></li>
+					<li><a href="http://groups.google.com/group/jatovm">MAILING LIST</a></li>
+					<li><a href="https://github.com/jatovm/jato/issues">BUGS</a></li>
+				</ul>
+			</div>
+			<div id="content">
+
+<h1>Documentation</h1>
+
+<h2>Reference Documentation</h2> 
+ 
+   <p> 
+    Here's some other related documentation that you're probably interested in when
+    hacking on Jato:
+    </p> 
+ 
+    <h3>Java Virtual Machine</h3> 
+    <ul> 
+    <li>Lindholm, T., and Yellin, F. 1999. The Java&trade; Virtual Machine Specification, 2nd Ed. <a href="http://java.sun.com/docs/books/vmspec/2nd-edition/html/VMSpecTOC.doc.html">URL</a></li> 
+ 
+    <li>Sun Microsystems. 2005. Clarifications and Amendments to the Java Virtual Machine Specification. <a href="http://java.sun.com/docs/books/vmspec/2nd-edition/jvms-clarify.html">URL</a></li> 
+    <li>Sun Microsystems. 2003.  Java Native Interface 5.0 Specification. <a href="http://java.sun.com/j2se/1.5.0/docs/guide/jni/spec/jniTOC.html">URL</a></li> 
+    <li>JCP. 2011. Maintenance Review of JSR 924 (JavaTM Virtual Machine Specification) for Java SE 7. <a href="http://jcp.org/aboutJava/communityprocess/maintenance/jsr924/JVMSpec-JavaSE7-ChangeLog.html">URL</a></li>
+    </ul> 
+ 
+    <h3>Intel i386/x86-64</h3> 
+    <ul> 
+    <li>Intel&reg; 64 and IA-32 Architectures Software Developer's Manuals. <a href="http://www.intel.com/products/processor/manuals/index.htm">URL</a></li> 
+ 
+    <li>System V Application Binary Interface Intel386&trade; Architecture Processor Supplement. <a href="http://www.sco.com/developers/devspecs/abi386-4.pdf">URL</a></li> 
+    <li>AMD64 Application Binary Interface. <a href="http://www.x86-64.org/documentation/abi.pdf">URL</a></li> 
+    </ul> 
+ 
+    <h3>PowerPC</h3> 
+    <ul> 
+ 
+    <li>Power Instruction Set Architecture. <a href="http://www.power.org/resources/downloads/PowerISA_V2.06_PUBLIC.pdf">URL</a></li> 
+    </ul> 
+ 
+    <h3>Dynamic Compilation</h3> 
+    <ul> 
+    <li>Arnold, M., et al. 2000. Adaptive Optimization in the Jalapeno JVM. <a href="http://citeseer.ist.psu.edu/arnold00adaptive.html">URL</a></li> 
+    <li>Burke, M., et al. 1999. The Jalapeno Dynamic Optimizing Compiler for Java. <a href="http://suif.stanford.edu/~jwhaley/papers/javagrande99.pdf">URL</a></li> 
+ 
+    <li>Parikh, V, and Stichnoth, J. 1998. Fast, effective code generation in a just-in-time Java compiler. <a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.47.6374">URL</a></li> 
+    </ul> 
+ 
+    <h3>Method Invocation</h3> 
+    <ul> 
+    <li>Alpern, B. et al. 2001. Efficient Implementation of Java Interfaces: Invokeinterface Considered Harmless. <a href="http://www.research.ibm.com/people/d/dgrove/papers/oopsla01.html">URL</a></li> 
+    </ul> 
+ 
+    <h3>Register Allocation</h3> 
+    <ul> 
+    <li>Poletto, M. and Sarkar, V. 1999. Linear scan register allocation. <a href="http://citeseer.ist.psu.edu/poletto99linear.html">URL</a></li> 
+    <li>Traub, O., Holloway, G., and Smith M. D. 1998. Quality and Speed in Linear-scan Register Allocation. <a href="http://citeseer.ist.psu.edu/traub98quality.html">URL</a></li> 
+    <li>Wimmer, C. 2004. Linear Scan Register Allocation for the Java HotSpot&trade; Client Compiler. <a href="http://www.ssw.uni-linz.ac.at/Research/Papers/Wimmer04Master/Wimmer04Master.pdf">URL</a></li> 
+ 
+    <li>Wimmer, C. and M&ouml;ssenb&ouml;ck, H. 2005. Optimized Interval Splitting in
+    a Linear Scan Register Allocator. <a href="http://www.ssw.uni-linz.ac.at/Research/Papers/Wimmer05/">URL</a></li> 
+    </ul> 
+ 
+    <h3>Garbage Collection</h3> 
+    <ul> 
+    <li>Diwan, A., Moss. E., and Hudson R. 1992. Compiler Support for Garbage Collection in a Statically Typed Language. <a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.56.1641">URL</a></li> 
+ 
+    <li>Agesen, O. 1998. GC Points in a Threaded Environment. <a href="http://research.sun.com/techrep/1998/abstract-70.html">URL</a></li> 
+    </ul> 
+ 
+    <h3>Exception Handling</h3> 
+    <ul> 
+    <li>Lee, S. et al. 2000. Efficient Java Exception Handling in Just-in-Time Compilation. <a href="http://citeseer.ist.psu.edu/376163.html">URL</a></li> 
+    </ul> 
+ 
+    <h3>Optimization</h3> 
+    <ul> 
+    <li>W&uuml;rthinger, T., Wimmer, C., and M&ouml;ssenb&ouml;ck, H. 2007. Array Bounds Check Elimination for the Java HotSpot&trade; Client Compiler. <a href="http://www.ssw.uni-linz.ac.at/Research/Papers/Wuerthinger07/">URL</a></li> 
+    <li>Wimmer, C., and M&ouml;ssenb&ouml;ck,  H. 2008. Automatic Array Inlining in Java Virtual Machines. <a href="http://www.ssw.uni-linz.ac.at/Research/Papers/Wimmer08/">URL</a></li> 
+ 
+    </ul> 
+ 
+<hr/> 
+ 
+<h2>Compiler Design Overview</h2> 
+ 
+  <h3>The Front-End</h3> 
+  <p> 
+ 
+  The front-end is responsible for parsing bytecodes and generating
+  expression trees for them to be consumed by the instruction selector. However,
+  you're strongly encouraged to write the back-end passes (instruction selection
+  and code emission) for them at the same time to make sure the high-level
+  intermediate representation makes sense.
+  </p> 
+  <p> 
+  For the front-end, we use a high-level intermediate representation (HIR) that
+  is a forest of expression trees. That is, a compilation unit (a method) is
+  divided into <a href="http://en.wikipedia.org/wiki/Basic_block">basic blocks</a> 
+  that contain a list of statements and each statement can
+  operate on an expression tree. Examples of statements include
+  <code>STMT_STORE</code> that stores an expression to a local variable and
+  <code>STMT_IF</code> that does conditional branch. The simplest form of
+  expression is <code>EXPR_VALUE</code> which represents a constant value but
+  there are more complex types of expressions including binary operations
+  (<code>EXPR_BINOP</code>) and method invocation (<code>EXPR_INVOKE</code>).
+  The relationships between a compilation unit, basic blocks, statements, and
+  expressions are illustrated in Figure 1.
+  </p> 
+ 
+  <p> 
+  The individual bytecodes are converted either to statements or expressions,
+  depending on whether they have side-effects or not and how the results of
+  the operations are used by other bytecodes (see <code>include/jit/statement.h</code> 
+  and <code>include/jit/expression.h</code> for further details).
+  You can find more information about the bytecode instruction set in
+  <a href="http://java.sun.com/docs/books/jvms/second_edition/html/Instructions.doc.html">Chapter 6</a> of the
+  <a href="http://java.sun.com/docs/books/jvms/second_edition/html/VMSpecTOC.doc.html">Java Virtual Machine Specification</a>.
+  </p> 
+ 
+  <div> 
+  <img src="conceptual-model.png" alt="conceptual model" /> 
+  <p> 
+  Figure 1: Conceptual model of the Compiler
+  </p> 
+  </div> 
+ 
+  <h3>The Back-End</h3> 
+  <p> 
+  The back-end is responsible for
+  <a href="http://en.wikipedia.org/wiki/Instruction_selection">instruction selection</a>,
+  <a href="">register allocation</a>, and
+  <a href="">code emission</a>.
+  The compiler doesn't do any optimizations yet.  Both instruction selection
+  and code emission are architecture specific whereas register allocation only
+  has some per-architecture parts. The instruction selector takes the HIR as
+  an input and outputs a list of instructions for each basic block as a
+  low-level intermediate representation (LIR) as illustrated in Figure 1. The
+  per-architecture LIR is very similar to the target machine code with the
+  exception of branch
+  instructions for which we need to calculate branch target offsets very late
+  in the code emission phase.
+  </p> 
+ 
+  <p> 
+  The architecture specific instruction selector is generated with
+  <a href="http://www.lrde.epita.fr/~akim/compil/assignments.split/MonoBURG.html">Monoburg</a>, a code generator
+  generator that produces tree-pattern mmatchers from a Burg-like specification.
+  </p> 
+
+			</div>
+			<div id="footer">
+				<p>Copyright &copy; 2010. Contact: <a href="mailto:penberg@cs.helsinki.fi">Pekka Enberg</a></p>
+				<p><a href="http://designpunct.ro" target="_blank">design by punct</a></p>
+			</div>		
+		</div>
+	</body>
+</html>

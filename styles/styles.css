@@ -1,0 +1,193 @@
+/*
+ * ClearSS
+ * 
+ * Use this as a starter CSS file. It will save time and headaches if you provide sensible defaults for your styles.
+ * 
+ * Author: Andrei Eftimie
+ * Contact: andrei@eftimie.com
+ * 
+ * Creative Commons License http://creativecommons.org/licenses/by/3.0/
+ * 
+ */
+
+@font-face {
+	font-family: 'MetaPro-NormalRegular';
+	src: url('../fonts/MetaPro-Normal.eot');
+	src: local('MetaPro-Normal Regular'), local('MetaPro-Normal'), url('../fonts/MetaPro-Normal.ttf') format('truetype'), url('../fonts/MetaPro-Normal.svg#MetaPro-Normal') format('svg');
+}
+
+/*
+ * Reset
+ * Loosely based on Eric Meyer's CSS Reset http://meyerweb.com/eric/tools/css/reset/
+ */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { margin: 0; padding: 0; }
+fieldset, img { border: none; vertical-align: middle; }
+
+
+
+/*
+ * Margins
+ */
+p, ul, ol, dl, table, address, pre, fieldset { margin: 0 0 11px 0; }
+
+/*
+ * Hyperlinks
+ */
+a { text-decoration: underline; overflow: hidden; color: #1382DD; text-decoration: underline; }
+a:hover, a:focus { text-decoration: none; }
+
+/*
+ * General Document Settings
+ */
+body { background: url(../images/bg.jpg) no-repeat 50% 0; font: 16px/22px Helvetica, Arial, sans-serif; color: #3F3F3F; }
+#wrap { width: 940px; margin: 0 auto; }
+
+/*
+ * Headings & More
+ */
+h1, h2, h3, h4, h5, h6 { font-size: 1em; margin: 34px 0 17px; color:#292942; font-family: MetaPro-NormalRegular, Arial, Sans-Serif; letter-spacing: -1px; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=hIEfix.png,sizingMethod=crop);zoom:1; }
+h1 { font-size: 39px; font-weight: normal; line-height: 38px; }
+h2 { font-size: 22px; }
+
+/*
+ * Lists
+ */
+ul { margin-left: 19px; }
+li ul, li ol { margin-top: 0; margin-bottom: 0; }
+ol { margin-left: 22px; }
+ol ul li { list-style: disc !important; }
+ol li { list-style-type: decimal; }
+ol li ol li { list-style-type: lower-alpha; }
+ol li ol li ol li { list-style-type: upper-roman; }
+
+/*
+ * Definition List
+ */
+dt { font-weight: bold; }
+dd { margin-bottom: .5em; }
+
+/*
+ * Table
+ */
+table { border-collapse: collapse; border: 0; width: 100%; }
+caption, th, td { text-align: left; padding: 9px; vertical-align: top; }
+th, td { border: 0; }
+caption, th { font-weight: bold; }
+
+/*
+ * Quotes
+ */
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+blockquote, q { quotes: "" ""; }
+
+/*
+ * Code
+ */
+pre { border: 1px solid #999; }
+code, pre { font-size: 1em; }
+
+/*
+ * Forms
+ */
+input, select, textarea, button { font-size: 1em; font-family: inherit; padding: .3em; }
+fieldset { border: 1px solid #999; padding: 1em 2em; }
+
+form ol { margin: 0; }
+form li { list-style: none; }
+form li label { display: block; }
+
+/*
+ * Common Classes
+ */
+
+small { font-size: 11px; }
+
+/*
+ * Header
+ */
+#header { display: inline-block; }
+#header { display: block; overflow: hidden; border-bottom: 1px solid #292942; margin-bottom: 29px; }
+
+#logo { background: url(../images/logo.png) no-repeat 0 0; width: 151px; height: 104px; float: left; margin: 0; _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/logo.png', sizingMethod='crop'); }
+#logo a { display: block; wdith: 151px; height: 104px; position: relative; text-indent: -9999em; }
+
+/*
+ * Navigation
+ */
+
+#nav { float: right; margin: 0; list-style: none; padding: 70px 20px 0 0;  font-family: MetaPro-NormalRegular, Arial, Sans-Serif; font-size: 15px; line-height: 25px; }
+#nav li { float: left; }
+#nav li a { float: left; padding: 2px 12px 0; background: url(../images/delimiter.gif) no-repeat 0 50%; color:#292942; margin-left: -2px; font-weight: bold; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=hIEfix.png,sizingMethod=crop); zoom:1; text-decoration: none; display: inline; }
+#nav li:first-child a, #nav li.first-child a { background: none; }
+#nav li a:hover, #nav li a:focus { color: #FF0000; }
+#nav li a.active { background: #FF0000; color:#fff; position: relative; }
+
+/*
+ * Content Zones
+ */
+
+#content { padding: 0 34px; display: inline-block; }
+#content { display: block; overflow: hidden; }
+#main { float: left; width: 500px; }
+#side { float: right; width: 325px; }
+
+#home { background-image: url(../images/bg-main.jpg); }
+
+/*Download*/
+#download { margin-bottom: 32px; }
+
+#motto { padding: 0 34px; margin-bottom: 18px; }
+#motto h1 { font-size: 71px; line-height: 71px; margin: 0 0 0 -7px; text-shadow: #fff 1px 1px 10px; }
+#motto h2 { width: 450px; line-height: 22px; font-size: 20px; margin: 0; }
+
+.box { display: block; background: #E5EBF8 url(../images/download.png) no-repeat 322px 50%; padding: 11px 18px 5px; border: 2px solid #fff; color:#292942; width: 343px; margin-left: 20px; text-decoration: none; }
+.box:hover, .box:focus { background-color: #dce4f6; }
+.box strong { display: block; line-height: 27px; font-size: 32px; font-weight: normal; font-family: MetaPro-NormalRegular, Arial, Sans-Serif; margin-left: -2px; letter-spacing: -1px; *filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=hIEfix.png,sizingMethod=crop);zoom:1; _filter: none !important; cursor: pointer; }
+.box small { position: relative; top: -4px; }
+.release { color:#FF0000; padding-left: 40px; text-decoration: none; }
+.release:hover, .release:focus { text-decoration: underline; }
+
+/*
+ * Side
+ */
+
+/*Specs*/
+#specs { margin: 0 0 50px; list-style: none; font-size: 14px; }
+#specs li { background: url(../images/bullet.gif) no-repeat 0 4px; padding-left: 22px; margin-bottom: 10px; }
+
+#side h2 { color:#3F3F3F; line-height: 22px; margin-bottom: 5px; }
+.checkout { font-size: 14px; }
+
+/*
+ * Help
+ */
+
+#help { margin-top: 40px; padding: 18px 34px 0; border-top: 1px solid #cccccc; display: inline-block; }
+#help { display: block; overflow: hidden; }
+#help h2 { margin: 0 0 18px; }
+.help-wrap { background: url(../images/faux.gif) repeat-y 0 0; display: inline-block; }
+.help-wrap { display: block; overflow: hidden; }
+.help-box { float: left; width: 254px; padding: 0 15px 0 20px; min-height: 55px; }
+.first { padding-left: 0; width: 274px; }
+.title { float: left; margin-right: 25px; display: inline; }
+.title img { padding-right: 5px; }
+.title img, .title h2 { float: left; }
+.title h2, .title h2 a { color:#249CDA; text-decoration: none; }
+.title h2 a:hover, .title h2 a:focus { text-decoration: none; }
+.desc { overflow: hidden; font-size: 12px; line-height: 16px; display: inline-block; }
+.desc { display: block; }
+.desc p { margin-bottom: 5px; }
+.desc a { text-decoration: none; color:#3F3F3F; }
+.desc a:hover, .desc a:focus { text-decoration: underline; }
+
+/*
+ * Footer
+ */
+#footer { border-top: 1px solid #cccccc; padding-left: 40px; font-size: 10px; color:#999999; margin: 20px 0 10px; padding-top: 5px; line-height: 16px; }
+#footer a { color:#999999; text-decoration: none; }
+#footer a:hover, #footer a:focus { text-decoration: underline; }
+#footer p { margin: 0;  }
+
+table#compat-table th { vertical-align: middle }
+table#compat-table th#app { width: 150px; }
+table#compat-table th#version { width: 130px; }
